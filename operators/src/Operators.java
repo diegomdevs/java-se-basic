@@ -4,7 +4,7 @@ public class Operators {
         byte lives = 5;
         byte gift = 100;
 
-        // Prefix
+        // Postfix
 
         // Decrement Operator --.
         lives--;
@@ -12,13 +12,13 @@ public class Operators {
         // Increment Operator ++.
         lives++;
 
-        // Postfix
+        // Prefix
         ++lives;
         --lives;
 
         // Printing Variables
         System.out.println("Lives: " + lives);
-        System.out.println("Prefix Gift: " + gift + lives++);
         System.out.println("Prefix Gift: " + gift + ++lives);
+        System.out.println("Postfix Gift: " + gift + lives++);
     }
 }
