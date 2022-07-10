@@ -1,7 +1,10 @@
+import java.lang.reflect.Array;
+
 public class Arrays {
     public static void main(String[] args) {
         String[] androidVersions = new String[17];
         String days[] = new String[7];
+        Array[] array = new Array[1];
 
         String[][] cities = new String[4][2];
 
@@ -13,11 +16,16 @@ public class Arrays {
         androidVersions[1] = "Banana bread";
         androidVersions[2] = "Cupcake";
         androidVersions[3] = "Donut";
-        System.out.println(androidVersions[0]);
+
+        for (int i = 0; i < androidVersions.length ; i++) {
+            System.out.println(androidVersions[i]);
+        }
+
+        /* System.out.println(androidVersions[0]);
         System.out.println(androidVersions[1]);
         System.out.println(androidVersions[2]);
         System.out.println(androidVersions[3]);
-
+        */
         System.out.println("-".repeat(50));
 
         cities[0][0] = "Colombia";
